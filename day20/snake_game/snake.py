@@ -26,11 +26,17 @@ class Snake():
         assemble 3 blocks to create snake body
         '''
         for pos in START_POS:
-            segment = Turtle("square")
-            segment.penup()
-            segment.goto(pos)
-            segment.color("white")
-            self.segments.append(segment)
+            self.add_segment(pos)
+
+    def add_segment(self, pos):
+        segment = Turtle("square")
+        segment.penup()
+        segment.color("white")
+        segment.goto(pos)
+        self.segments.append(segment)
+
+    def extend(self):
+        self.add_segment(self.segments[-1].pos())
 
     def move(self):
         '''
