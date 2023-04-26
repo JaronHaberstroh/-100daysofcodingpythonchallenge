@@ -23,8 +23,11 @@ class DataManager():
         self.guessed_states.append(state_guessed)
 
     def exit(self):
-        for state in self.states_list:
-            if state not in self.guessed_states:
-                self.to_learn_list.append(state)
+        self.to_learn_list = [
+            state for state in self.states_list
+            if state not in self.guessed_states]
+        # for state in self.states_list:
+        #     if state not in self.guessed_states:
+        #         self.to_learn_list.append(state)
         to_learn = pandas.DataFrame(self.to_learn_list)
         to_learn.to_csv("states_to_learn.csv")
