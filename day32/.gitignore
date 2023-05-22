@@ -1,0 +1,9 @@
+playground/config.py
+playground/__pycache__
+
+projects/motivational_quotes/config.py
+projects/motivational_quotes/__pycache__
+
+projects/birthday_wisher/config.py
+projects/birthday_wisher/__pycache__
+projects/birthday_wisher/birthdays.csv
