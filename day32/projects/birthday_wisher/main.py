@@ -15,7 +15,7 @@ csv_data = pandas.read_csv("projects/birthday_wisher/birthdays.csv")
 now = dt.datetime.now()
 
 # Choose random image
-images_list = glob.glob("/home/jhspaz988/Documents/python/100daysofcodingpythonchallenge/day32/projects/birthday_wisher/letter_templates/images/*.jpeg")
+images_list = glob.glob("projects/birthday_wisher/letter_templates/images/*.jpeg")
 image_path = choice(images_list)
 with open(image_path, "rb") as file:
     image = file.read()
