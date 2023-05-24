@@ -1,4 +1,5 @@
 playground/config.py
 playground/__pycache__
-projects/config.py
-projects/__pycache__
+
+projects/iss_overhead/config.py
+projects/iss_overhead/__pycache__
