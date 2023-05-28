@@ -1,4 +1,2 @@
-playground/config.py
-playground/__pycache__
-projects/config.py
-projects/__pycache__
+projects/stock_news_messenger/config.py
+projects/stock_news_messenger/__pycache__
