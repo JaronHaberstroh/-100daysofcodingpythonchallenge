@@ -17,9 +17,12 @@ def create_dir(days):
         else:
             for child in CHILD_LIST:
                 os.mkdir(os.path.join(dir_name, child))
-            with open(f"{dir_name}/.gitignore", "x") as file:
+            with open(f"{dir_name}/.gitignore", "w") as file:
                 file.write(
-                    "playground/config.py\nplayground/__pycache__\nprojects/config.py\nprojects/__pycache__")
+                    "playground/config.py\n"
+                    "playground/__pycache__\n"
+                    "projects/config.py\n"
+                    "projects/__pycache__")
 
 
 create_dir(sys.argv[1:])
